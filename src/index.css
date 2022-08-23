@@ -1,13 +1,120 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+*{
+  padding: 0;
+  border: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #1CD6CE;
+  background-image: url(images/image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maindiv {
+  width: 100vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center; 
+}
+
+.center_div {
+  text-align: center;
+  background-color: bisque;
+  background-image: url(images/image-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  width:35%;
+  border-radius: 1rem;
+  margin: 4rem;
+  /* height: 60%; */
+}
+
+h1{
+  background-color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-shadow: 3px 3px rgb(127, 7, 233);
+  color:aqua;
+  font-size: xx-large !important;
+  font-family: 'DynaPuff', cursive;
+  letter-spacing: 2px;
+  font-size: 50px !important;
+}
+
+input{
+  padding:0.2rem;
+  text-align: center;
+  border-bottom: 3px solid purple;
+  background-color: transparent;
+  color:bisque;
+  font-size: 23px;
+  font-family: 'Caveat', cursive;
+}
+
+input:focus {
+  outline: none;
+}
+
+ol{
+  list-style: none;
+  text-align:left;
+  padding-left: 4rem;
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+}
+
+.newbtn {
+  background-color: greenyellow;
+  background-color: #16a085 !important;
+  box-shadow : 5px 5px 15px -5px rgba(0,0,0,0.3);
+  color: white !important;
+  font-weight: 900 !important;
+  margin-left: 32px !important;
+  width:50px;
+  height:55px;
+  border-radius: 50% !important;
+}
+
+.newbtn:hover {
+  background-color: white !important;
+  color: #16a085 !important;
+}
+
+.deleteit{
+  background-color: purple ;
+  color: white;
+  border-radius: 50% !important;
+  height:30px !important;
+  width:30px !important;
+  padding: 5px;
+}
+
+.deleteit:hover {
+  background-color: white;
+  color: red;
+}
+
+.hey{
+  padding-bottom: 10px;
+  color: white;
+}
+
+li { 
+  padding-left: 9px !important;
+}
+
+.todo_style{
+  display : flex;
+  align-items: center;
+  margin-bottom :10px; 
 }
